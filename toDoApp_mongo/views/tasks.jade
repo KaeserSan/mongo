@@ -1,0 +1,25 @@
+extends layout
+
+block mainContent
+		div.mainTitle
+			h1 ToDo List
+			p Welcome to my ToDo List.
+
+		div.inputForm
+			form(action="/tasks", method="POST")
+				button.btnCompleteAll(name="btnCompleteAll", action="/completeAll") all done
+				input(type="text",name="name", required, placeholder="Insert task name...")
+				//- input(type="submit",value="Add Task")
+				button.btnAddTask(name="btnAddTask") add
+
+		div.tasks
+			each task, i in tasks
+				div.taskslist
+					button.btnComplete(name="btnComplete_#{task.id}", action="/complete/#{task._id}") done
+					div
+						p #{ task.name }
+						span Task created: #{ task.timeDateCreation }
+						//- span='(Created at: ' + moment(obj.createTime).format("YYYY/MM/DD") + ')'
+					button.btnDelete(name="btnDelete_#{task.id}", action="/tasks/#{task._id}") delete
+
+

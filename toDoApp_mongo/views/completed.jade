@@ -1,0 +1,12 @@
+extends layout
+
+block mainContent
+		h1= title
+		div
+			each task, i in tasks
+				div.tasksCompleted
+					div
+						p #{ task.name }
+						div.timeTasks
+							span Task created: #{ task.timeDateCreation}
+							span Task completed: #{ task.timeDateCompletion}

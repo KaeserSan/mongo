@@ -1,0 +1,116 @@
+body.toDoBody {
+  background-color:  black;
+  color: #676360;
+}
+
+.upperMenu a{
+  color: #676360;
+  font-family:  arial;
+  font-size:  0.7em;
+  margin: 0px 10px;
+  text-decoration: none;
+}
+.upperMenu a.selected {
+  color: white;
+}
+.container {
+  margin: 0 15px;
+}
+.deletedLabel h2 {
+  background-color: #911CC6;
+  color: white;
+}
+
+.mainTitle, .mainContent {
+  margin: 15px 0px;
+  font-family:  arial;
+}
+.mainTitle h1, .mainContent h1{
+  margin:0;
+  font-size:  2em;
+  color: white;
+  font-family:  arial;
+}
+
+.mainTitle p{
+  margin:0;
+  font-size:  1em;
+  color: #676360;
+}
+
+.mainContent p{
+  color: #676360;
+}
+
+.inputForm {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.mainContent button {
+  height: 2em;
+  padding: 3px 6px;
+  color: #fff;
+  border-radius: 15px;
+}
+.btnComplete, .btnCompleteAll {
+  margin-right: 25px;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+  width: 100px;
+}
+.btnAddTask{
+  background-color: #33A5D2;
+  border-color: #23A2D1;
+  width: 100px;
+}
+.btnDelete{
+  float: rigth;
+  background-color: #FF0000;
+  border-color: #D60202;
+  width: 50px;
+}
+.inputForm > button {
+  margin-right: 25px;
+  height: 2em;
+}
+.inputForm label {
+  color: #676360;
+}
+
+.tasks {
+  display:  flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.taskslist {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tasks p{
+  width: 300px;
+  margin: 0;
+}
+.tasks span{
+  width: 300px;
+  margin: 0;
+  margin-left: 25px;
+  font-size:  0.75em;
+}
+.tasksCompleted p{
+  text-decoration: line-through;
+  margin: 0 0 0 25px;
+}
+.timeTasks span{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 0;
+  margin-left: 50px;
+  font-size:  0.75em;
+}

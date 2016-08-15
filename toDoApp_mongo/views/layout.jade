@@ -1,0 +1,20 @@
+doctype
+html(lang="en")
+	head
+		title #{ title } - My Site
+		link(rel="stylesheet", href="/style.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+	body.toDoBody
+		header
+			div.upperMenu
+				- var ruta = path
+				- var activeTasks = path.indexOf('tasks') !== -1;
+				a(href="/tasks", name="menuTasks", class=activeTasks ? "selected" : "").menuButton List Tasks
+				a(href="/completed", name="menuComplete", class=activeTasks ? "" : "selected").menuButton Completed
+		div.container
+			div.deletedLabel
+				h2(hidden=true) Task Deleted
+			div.mainContent
+				block mainContent
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		script(src="main.js")

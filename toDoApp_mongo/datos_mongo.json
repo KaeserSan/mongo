@@ -1,0 +1,3 @@
+{ "id": 1, "name": "my first task", "completed": false, "timeDateCreation": {"$date": 1393804800000}, "timeDateCompletion": null }
+{ "id": 2, "name": "another task", "completed": false, "timeDateCreation": {"$date": 1393804800000}, "timeDateCompletion": null }
+{ "id": 3, "name": "and another task one more time", "completed": false, "timeDateCreation": {"$date": 1393804800000}, "timeDateCompletion": null }
